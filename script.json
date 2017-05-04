@@ -7,9 +7,8 @@
       "defaultValue": "."
     },
     {
-      "key": "ROOT_URL",
-      "description": "The URL that clients will be accessing your application with",
-      "defaultValue": "http://${app:name}.apps.orion.hosting"
+      "key": "APP_KEY",
+      "description": "Unique key per aplication",
     },
     {
       "key": "MONGO_URL",
