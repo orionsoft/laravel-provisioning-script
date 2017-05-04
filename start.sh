@@ -12,7 +12,6 @@ sudo docker pull mtmacdonald/docker-laravel:1.4.0
 
 # Moving Enviroment variables
 sudo cp /home/deploy/.env  /home/deploy/app/.env
-ls /home/deploy
 sudo cp /home/deploy/script/provision.sh  /home/deploy/app/provision.sh
 # Run Docker container
 sudo docker run -d \
@@ -21,9 +20,10 @@ sudo docker run -d \
   --name laravel \
   --restart=always \
   mtmacdonald/docker-laravel:1.4.0
-
+ls /home/deploy/app
+echo "----------------ward--------------------"
 # Running provision command inside Docker
-sudo docker exec -it laravel bash /share/provision.sh
+sudo docker exec -it laravel script /share/provision.sh
 
 # Running provision command inside Docker
 sudo docker exec -it laravel tail -f /share/storage/logs/laravel.log >> /home/deploy/app.log
