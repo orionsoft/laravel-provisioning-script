@@ -23,30 +23,6 @@
       "description": "debug, info, notice, warning, error, critical, alert, emergency",
       "defaultValue": "",
       "optional": true
-    },
-    {
-      "key": "DB_CONNECTION",
-      "description": "Database connection type",
-      "defaultValue": "mysql",
-      "optional": true
-    },
-    {
-      "key": "DB_DATABASE",
-      "description": "Database name",
-      "defaultValue": "",
-      "optional": true
-    },
-    {
-      "key": "DB_USERNAME",
-      "description": "Database username",
-      "defaultValue": "",
-      "optional": true
-    },
-    {
-      "key": "DB_PASSWORD",
-      "description": "Database password",
-      "defaultValue": "",
-      "optional": true
     }
   ]
 }
