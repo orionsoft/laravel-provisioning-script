@@ -3,4 +3,3 @@ composer self-update
 cd share
 composer install --prefer-dist
 chmod -R o+w storage/
-php artisan migrate --force
