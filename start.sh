@@ -12,10 +12,11 @@ sudo docker pull mtmacdonald/docker-laravel:1.4.0
 
 # Moving Enviroment variables
 sudo cp /home/deploy/.env  /home/deploy/app/.env
-sudo cp /home/deploy/script/provision.sh  /home/deploy/code/provision.sh
+ls /home/deploy
+sudo cp /home/deploy/script/provision.sh  /home/deploy/app/provision.sh
 # Run Docker container
 sudo docker run -d \
-  -v /home/deploy/code:/share \
+  -v /home/deploy/app:/share \
   -p 80:80 \
   --name laravel \
   --restart=always \
