@@ -8,7 +8,7 @@
     },
     {
       "key": "APP_KEY",
-      "description": "Secret application key",
+      "description": "Secret application key"
     },
     {
       "key": "APP_DEBUG",
