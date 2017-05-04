@@ -1,0 +1,52 @@
+{
+  "language": "Laravel",
+  "envVars": [
+    {
+      "key": "APP_URL",
+      "description": "The URL that clients will be accessing your application with",
+      "defaultValue": "http://${app:name}.apps.orion.hosting"
+    },
+    {
+      "key": "APP_KEY",
+      "description": "Secret application key",
+    },
+    {
+      "key": "APP_DEBUG",
+      "description": "If you want to debug your app on the server. Optional",
+      "defaultValue": "false",
+      "optional": true
+    },
+    {
+      "key": "APP_LOG_LEVEL",
+      "description": "How Meteor will send email, SMTP settings. Optional",
+      "defaultValue": "",
+      "optional": true
+    },
+    {
+      "key": "DB_CONNECTION",
+      "description": "Set the type of DB connection",
+      "defaultValue": "mysql",
+      "optional": true
+    },
+    {
+      "key": "DB_DATA",
+      "description": "Database ip direction",
+      "optional": true
+    },
+    {
+      "key": "DB_DATABASE",
+      "description": "Database ip direction",
+      "optional": true
+    },
+    {
+      "key": "DB_USERNAME",
+      "description": "Database username",
+      "optional": true
+    },
+    {
+      "key": "DB_PASSWORD",
+      "description": "Database password",
+      "optional": true
+    }
+  ]
+}
