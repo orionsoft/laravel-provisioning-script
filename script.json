@@ -9,35 +9,44 @@
     {
       "key": "APP_KEY",
       "defaultValue": "",
-      "description": "Unique key per aplication",
+      "description": "Run php artisan key:generate",
       "optional": true
     },
     {
-      "key": "MONGO_URL",
-      "description": "URL for connecting to Mongo",
-      "defaultValue": "mongodb://localhost:27017/meteor"
-    },
-    {
-      "key": "MONGO_OPLOG_URL",
-      "description": "URL for connecting to Mongo with Oplog. Optional",
+      "key": "APP_DEBUG",
+      "description": "If you want to debug your app on the server. Optional",
       "defaultValue": "",
       "optional": true
     },
     {
-      "key": "MAIL_URL",
-      "description": "How Meteor will send email, SMTP settings. Optional",
+      "key": "APP_LOG_LEVEL",
+      "description": "debug, info, notice, warning, error, critical, alert, emergency",
       "defaultValue": "",
       "optional": true
     },
     {
-      "key": "METEOR_SETTINGS",
-      "description": "Meteor settings JSON",
-      "defaultValue": "{}"
+      "key": "DB_CONNECTION",
+      "description": "Database connection type",
+      "defaultValue": "mysql",
+      "optional": true
     },
     {
-      "key": "DOCKER_IMAGE",
-      "description": "Choose a docker image to run your Meteor app. abernix/meteord:base is recommended",
-      "defaultValue": "abernix/meteord:base"
+      "key": "DB_DATABASE",
+      "description": "Database name",
+      "defaultValue": "",
+      "optional": true
+    },
+    {
+      "key": "DB_USERNAME",
+      "description": "Database username",
+      "defaultValue": "",
+      "optional": true
+    },
+    {
+      "key": "DB_PASSWORD",
+      "description": "Database password",
+      "defaultValue": "",
+      "optional": true
     }
   ]
 }
