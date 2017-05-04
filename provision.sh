@@ -2,4 +2,4 @@
 composer self-update
 cd share
 composer install --prefer-dist
-chmod -R ug+rwx storage bootstrap/cache
+chmod -R ug+rwx storage/ bootstrap/cache/
