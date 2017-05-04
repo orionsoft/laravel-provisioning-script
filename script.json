@@ -9,7 +9,8 @@
     {
       "key": "APP_KEY",
       "defaultValue": "",
-      "description": "Unique key per aplication"
+      "description": "Unique key per aplication",
+      "optional": true
     },
     {
       "key": "MONGO_URL",
