@@ -8,6 +8,7 @@
     },
     {
       "key": "APP_KEY",
+      "defaultValue": "",
       "description": "Unique key per aplication",
     },
     {
