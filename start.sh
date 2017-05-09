@@ -9,11 +9,10 @@ sudo docker run -d \
   --name laravel \
   --restart=always \
   mtmacdonald/docker-laravel:1.4.0
+
 ls /home/deploy/app
+ls /home/deploy/app/storage/logs
 
-echo "----------------ward--------------------"
-
-cd /home/deploy/app/storage/logs
 # Running provision command inside Docker
 sudo docker exec -i laravel bash /share/provision.sh
 
