@@ -20,4 +20,4 @@ sudo docker exec -i laravel bash /share/provision.sh
 echo "--------------------- Docker Provisioned ------------------------"
 # Running provision command inside Docker
 sleep 5s
-nohup sh /home/deploy/script/pipeLogs.sh > /dev/null 2>&1 &
+# nohup sh /home/deploy/script/pipeLogs.sh > /dev/null 2>&1 &
