@@ -1,3 +1,8 @@
+# Adding Swap
+/bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
+/sbin/mkswap /var/swap.1
+/sbin/swapon /var/swap.1
+
 # Moving Enviroment variables
 sudo cp /home/deploy/.env  /home/deploy/app/.env
 sudo cp /home/deploy/script/provision.sh  /home/deploy/app/provision.sh
