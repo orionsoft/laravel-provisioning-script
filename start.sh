@@ -12,6 +12,8 @@ sudo docker run -d \
 ls /home/deploy/app
 
 echo "----------------ward--------------------"
+
+cd /home/deploy/app/storage/logs
 # Running provision command inside Docker
 sudo docker exec -i laravel bash /share/provision.sh
 
