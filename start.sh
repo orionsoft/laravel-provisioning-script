@@ -12,11 +12,12 @@ sudo docker run -d \
 
 ls /home/deploy/app
 ls /home/deploy/app/storage
-ls /home/deploy/app/storage/logs
+
 
 # Running provision command inside Docker
 sudo docker exec -i laravel bash /share/provision.sh
 
+sudo docker exec -i laravel ls share/storage/logs
 sudo docker exec -i laravel tail share/storage/logs/laravel.log -f
 # Running provision command inside Docker
 sleep 5s
