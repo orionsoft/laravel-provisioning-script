@@ -1,5 +1,8 @@
 # This script will run inside docker machine
-cd share
+echo "--------------------- Inside Share ------------------------"
+cd /share
 composer self-update
-chmod -R ug+rwx storage bootstrap/cache
+echo "--------------------- Installing Dependencies ------------------------"
 composer install --prefer-dist
+echo "--------------------- Adding permissions ------------------------"
+chmod -R ug+rwx storage bootstrap/cache
