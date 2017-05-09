@@ -15,6 +15,7 @@ echo "----------------ward--------------------"
 # Running provision command inside Docker
 sudo docker exec -i laravel bash /share/provision.sh
 
+sudo docker exec -i laravel tail share/storage/logs/laravel.log -f
 # Running provision command inside Docker
 sleep 5s
 
