@@ -2,4 +2,5 @@
 composer self-update
 cd share
 composer install --prefer-dist
-chmod -R o+w storage bootstrap/cache
+chmod -R guo+w storage
+chmod -R o+w bootstrap/cache
