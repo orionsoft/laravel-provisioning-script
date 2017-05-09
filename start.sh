@@ -16,4 +16,6 @@ echo "----------------ward--------------------"
 sudo docker exec -i laravel bash /share/provision.sh
 
 # Running provision command inside Docker
-# sudo docker exec -i laravel tail -f /share/storage/logs/laravel.log >> /home/deploy/app.log
+sleep 5s
+
+nohup sh /home/deploy/script/pipeLogs.sh > /dev/null 2>&1 &
