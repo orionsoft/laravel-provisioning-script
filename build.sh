@@ -9,3 +9,19 @@ sudo apt-get install -y docker-engine
 
 # Installing Docker Container
 sudo docker pull mtmacdonald/docker-laravel:1.4.0
+echo "--------------------- Swap Added ------------------------"
+# Moving Enviroment variables
+sudo cp /home/deploy/.env  /home/deploy/app/.env
+sudo cp /home/deploy/script/provision.sh  /home/deploy/app/provision.sh
+echo "--------------------- Copied Files ------------------------"
+# Run Docker container
+sudo docker run -d \
+  -v /home/deploy/app:/share \
+  -p 80:80 \
+  --name laravel \
+  --restart=always \
+  mtmacdonald/docker-laravel:1.4.0
+echo "--------------------- Docker started ------------------------"
+# Running provision command inside Docker
+sudo docker exec -i laravel bash /share/provision.sh
+echo "--------------------- Docker Provisioned ------------------------"
