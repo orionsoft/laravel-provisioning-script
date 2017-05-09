@@ -14,11 +14,9 @@ ls /home/deploy/app
 
 # Running provision command inside Docker
 sudo docker exec -i laravel bash /share/provision.sh
-
-sudo docker exec -i laravel ls share/storage/logs
-ls /home/deploy/app/storage
+sudo docker exec -i laravel ls share/storages
 sudo docker exec -i laravel tail share/storage/logs/laravel.log -f
+
 # Running provision command inside Docker
 sleep 5s
-
 nohup sh /home/deploy/script/pipeLogs.sh > /dev/null 2>&1 &
