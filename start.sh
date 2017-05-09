@@ -11,6 +11,7 @@ sudo docker run -d \
   mtmacdonald/docker-laravel:1.4.0
 
 ls /home/deploy/app
+ls /home/deploy/app/storage
 ls /home/deploy/app/storage/logs
 
 # Running provision command inside Docker
