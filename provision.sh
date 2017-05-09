@@ -3,6 +3,7 @@ echo "--------------------- Inside Share ------------------------"
 cd /share
 composer self-update
 echo "--------------------- Installing Dependencies ------------------------"
-composer install --prefer-dist
+composer install
 echo "--------------------- Adding permissions ------------------------"
-chmod -R ug+rwx storage bootstrap/cache
+chmod -R guo+w storage
+chmod -R ug+rwx bootstrap/cache
