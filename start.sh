@@ -10,12 +10,8 @@ sudo docker run -d \
   --restart=always \
   mtmacdonald/docker-laravel:1.4.0
 
-ls /home/deploy/app
-
 # Running provision command inside Docker
 sudo docker exec -i laravel bash /share/provision.sh
-sudo docker exec -i laravel ls share/storages
-sudo docker exec -i laravel tail share/storage/logs/laravel.log -f
 
 # Running provision command inside Docker
 sleep 5s
